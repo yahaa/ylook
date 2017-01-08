@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
@@ -37,29 +36,8 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 </head>
 <body>
-<i class="style-switcher-btn icon-cogs">
-</i>
-<div class="style-switcher">
-    <div class="theme-close">
-        <i class="icon-remove">
-        </i>
-    </div>
-    <div class="theme-heading">
-        Theme Colors
-    </div>
-    <ul class="unstyled">
-        <li class="theme-default theme-active" data-header="light" data-style="default">
-        </li>
-        <li class="theme-blue" data-header="light" data-style="blue">
-        </li>
-        <li class="theme-orange" data-header="light" data-style="orange">
-        </li>
-        <li class="theme-red" data-header="light" data-style="red">
-        </li>
-        <li class="theme-light" data-header="light" data-style="light">
-        </li>
-    </ul>
-</div>
+
+<!--顶部-->
 <div class="top">
     <div class="container">
         <ul class="loginbar pull-right">
@@ -90,7 +68,7 @@
         </ul>
     </div>
 </div>
-
+<!--头部 -->
 <div class="header">
     <div class="container">
         <!-- Logo -->
@@ -125,27 +103,14 @@
                         </li>
                         <li>
                             <a class="dropdown-toggle" data-toggle="dropdown" href="">
-                                动态
-                                <b class="caret">
-                                </b>
+                                发布悬赏
                             </a>
                             <b class="caret-out">
                             </b>
                         </li>
                         <li>
                             <a class="dropdown-toggle" data-toggle="dropdown" href="">
-                                榜单
-                                <b class="caret">
-                                </b>
-                            </a>
-                            <b class="caret-out">
-                            </b>
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                联系我们
-                                <b class="caret">
-                                </b>
+                                做任务
                             </a>
                             <b class="caret-out">
                             </b>
@@ -172,62 +137,16 @@
         </div>
     </div>
 </div>
+
+<!--主页图片-->
 <div class="slider-inner">
     <div class="da-slider" id="da-slider">
         <div class="da-slide">
-            <h2>
-                <i>
-                    也一样
-                </i>
-                <br/>
-                <i>
-                    FULLY RESPONSIVE
-                </i>
-                <br/>
-                <i>
-                    DESIGN
-                </i>
-            </h2>
-            <p>
-                <i>
-                    Lorem ipsum dolor amet
-                </i>
-                <br/>
-                <i>
-                    tempor incididunt ut
-                </i>
-                <br/>
-                <i>
-                    veniam omnis
-                </i>
-            </p>
             <div class="da-img">
                 <img alt="" src="../statics/plugins/parallax-slider/img/1.png"/>
             </div>
         </div>
         <div class="da-slide">
-            <h2>
-                <i>
-                    RESPONSIVE VIDEO
-                </i>
-                <br/>
-                <i>
-                    SUPPORT AND
-                </i>
-                <br/>
-                <i>
-                    MANY MORE
-                </i>
-            </h2>
-            <p>
-                <i>
-                    Lorem ipsum dolor amet
-                </i>
-                <br/>
-                <i>
-                    tempor incididunt ut
-                </i>
-            </p>
             <div class="da-img span6">
                 <div class="span6">
                     <iframe allowfullscreen="" frameborder="0" height="320" mozallowfullscreen=""
@@ -237,46 +156,17 @@
             </div>
         </div>
         <div class="da-slide">
-            <h2>
-                <i>
-                    USING BEST WEB
-                </i>
-                <br/>
-                <i>
-                    SOLUTIONS WITH
-                </i>
-                <br/>
-                <i>
-                    HTML5/CSS3
-                </i>
-            </h2>
-            <p>
-                <i>
-                    Lorem ipsum dolor amet
-                </i>
-                <br/>
-                <i>
-                    tempor incididunt ut
-                </i>
-                <br/>
-                <i>
-                    veniam omnis
-                </i>
-            </p>
             <div class="da-img">
                 <img alt="image01" src="../statics/plugins/parallax-slider/img/html5andcss3.png"/>
             </div>
         </div>
         <nav class="da-arrows">
-                    <span class="da-arrows-prev">
-                    </span>
-            <span class="da-arrows-next">
-                    </span>
+            <span class="da-arrows-prev"></span>
+            <span class="da-arrows-next"></span>
         </nav>
     </div>
-    <!--/da-slider-->
 </div>
-
+<!--展示区 -->
 <div class="container">
 
     <div class="headline">
@@ -369,322 +259,51 @@
                 </p>
             </div>
         </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
-        <li class="span3">
-            <div class="thumbnail-style thumbnail-kenburn">
-                <div class="thumbnail-img">
-                    <div class="overflow-hidden">
-                        <img alt="" src="../statics/img/carousel/9.jpg"/>
-                    </div>
-                    <a class="btn-more hover-effect" href="#">
-                        read more +
-                    </a>
-                </div>
-                <h3>
-                    <a class="hover-effect" href="#">
-                        Another Work
-                    </a>
-                </h3>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta
-                    sem.
-                </p>
-            </div>
-        </li>
     </ul>
+</div>
+
+<!--这是页脚-->
+<div class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span4">
+                <div class="headline"><h3>关于我们</h3></div>
+                <p class="margin-bottom-25">本平台实现老师和学生在线教与学。</p>
+
+            </div>
+            <div class="span4">
+                <div class="headline"><h3>联系我们</h3></div>
+                <address>
+                    宝山区上大路99号 <br/>
+                    中国 上海<br/>
+                    联系方式: 18721808563 <br/>
+                    Email: <a href="mailto:1477765176@qq.com" class="">1477765176@qq.com</a>
+                </address>
+
+            </div>
+            <div class="span2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--这是版权区-->
+<div class="copyright">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span8">
+                <p>版权所有&copy; 上海大学。</p>
+            </div>
+            <div class="span4">
+                <a href="index.html">
+                    <img id="logo-footer" src="../statics/img/logo2-default.png"
+                         class="pull-right" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 

@@ -105,7 +105,7 @@ public class User {
                 '}';
     }
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "username")
     public Set<HunterInfo> getHunterInfos() {
         return hunterInfos;

@@ -34,20 +34,6 @@
 </head>
 
 <body>
-<!--=== Style Switcher ===-->
-<i class="style-switcher-btn icon-cogs"></i>
-<div class="style-switcher">
-    <div class="theme-close"><i class="icon-remove"></i></div>
-    <div class="theme-heading">Theme Colors</div>
-    <ul class="unstyled">
-        <li class="theme-default theme-active" data-style="default" data-header="light"></li>
-        <li class="theme-blue" data-style="blue" data-header="light"></li>
-        <li class="theme-orange" data-style="orange" data-header="light"></li>
-        <li class="theme-red" data-style="red" data-header="light"></li>
-        <li class="theme-light" data-style="light" data-header="light"></li>
-    </ul>
-</div><!--/style-switcher-->
-<!--=== End Style Switcher ===-->
 
 <!--=== 顶部 ===-->
 <div class="top">
@@ -61,14 +47,13 @@
         </ul>
     </div>
 </div>
-<!--=== End Top ===-->
+
 
 <!--=== Header ===-->
 <div class="header">
     <div class="container">
-        <!-- logo -->
         <div class="logo">
-            <a href="index.html"><img id="logo-header" src="../statics/img/logo1-default.png" alt="Logo"/></a>
+            <a href="/"><img id="logo-header" src="../statics/img/logo1-default.png" alt="Logo"/></a>
         </div>
 
         <!-- Menu -->
@@ -82,35 +67,13 @@
                 <div class="nav-collapse collapse">
                     <ul class="nav top-2">
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">主页
-                                <b class="caret"></b>
-                            </a>
-
-                            <b class="caret-out"></b>
+                            <a href="/">主页</a>
                         </li>
 
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">动态
-                                <b class="caret"></b>
-                            </a>
-                            <b class="caret-out"></b>
+                            <a href="">动态</a>
                         </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">联系我们
-                                <b class="caret"></b>
-                            </a>
-                            <b class="caret-out"></b>
-                        </li>
-                        <li><a class="search"><i class="icon-search search-btn"></i></a></li>
                     </ul>
-                    <div class="search-open">
-                        <div class="input-append">
-                            <form/>
-                            <input type="text" class="span3" placeholder="Search"/>
-                            <button type="submit" class="btn-u">Go</button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -118,32 +81,30 @@
 </div>
 
 
-
 <!--===登陆部分===-->
 <div class="container">
     <div class="row-fluid">
         <form class="log-page" action="/user/check" method="post">
-        <h3>登陆 ylook</h3>
-        <div class="input-prepend">
-            <span class="add-on"><i class="icon-user"></i></span>
-            <input class="input-xlarge" type="text" placeholder="Username" name="username"/>
-        </div>
-        <div class="input-prepend">
-            <span class="add-on"><i class="icon-lock"></i></span>
-            <input class="input-xlarge" type="password" placeholder="password" name="password"/>
-        </div>
-        <div class="controls form-inline">
-            <label class="checkbox"><input type="checkbox"/>记住我</label>
-            <button class="btn-u pull-right" type="submit">登陆</button>
-            <p >${msg}</p>
-        </div>
-        <hr/>
-        <h4>忘记密码 ?</h4>
-        <p><a class="color-green" href="#">找回</a>密码.</p>
+            <h3>登陆 ylook</h3>
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-user"></i></span>
+                <input class="input-xlarge" type="text" placeholder="Username" name="username"/>
+            </div>
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-lock"></i></span>
+                <input class="input-xlarge" type="password" placeholder="password" name="password"/>
+            </div>
+            <div class="controls form-inline">
+                <label class="checkbox"><input type="checkbox"/>记住我</label>
+                <button class="btn-u pull-right" type="submit">登陆</button>
+                <p>${msg}</p>
+            </div>
+            <hr/>
+            <h4>忘记密码 ?</h4>
+            <p><a class="color-green" href="#">找回</a>密码.</p>
         </form>
-    </div><!--/row-fluid-->
-</div><!--/container-->
-
+    </div>
+</div>
 
 
 <script type="text/javascript" src="../statics/js/jquery-1.8.2.min.js"></script>

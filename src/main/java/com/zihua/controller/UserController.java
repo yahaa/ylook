@@ -1,5 +1,8 @@
 package com.zihua.controller;
 
+import com.google.gson.ExclusionStrategy;
+import com.google.gson.FieldAttributes;
+import com.google.gson.GsonBuilder;
 import com.sun.deploy.net.HttpResponse;
 import com.zihua.entity.User;
 import com.zihua.service.UserService;
@@ -9,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -57,7 +61,35 @@ public class UserController {
     }
 
     @RequestMapping(value = "/personal_center")
-    public String personCenter(){
+    public String personCenter() {
         return "personal_center";
     }
+
+
+    @RequestMapping(value = "/person_info",produces = "text/html;charset=UTF-8")
+    @ResponseBody
+    public String personInfo(HttpServletRequest request) {
+
+        HttpSession session = request.getSession();
+
+        User a = (User) session.getAttribute("www.zihua.com");
+        GsonBuilder gsonBuilder = new GsonBuilder();
+
+        gsonBuilder.setExclusionStrategies(new ExclusionStrategy() {
+            @Override
+            public boolean shouldSkipField(FieldAttributes fieldAttributes) {
+                if (fieldAttributes.getName() == "author") return true;
+                return false;
+            }
+
+            @Override
+            public boolean shouldSkipClass(Class<?> aClass) {
+                return false;
+            }
+        });
+        String s = gsonBuilder.create().toJson(a);
+        return s;
+
+    }
+
 }

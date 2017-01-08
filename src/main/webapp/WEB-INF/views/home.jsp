@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
@@ -66,7 +65,7 @@
             <li>
                 <i class="icon-globe">
                 </i>
-                <a href="login">
+                <a href="">
                     用户头像
                     <i class="icon-sort-up">
                     </i>
@@ -76,14 +75,14 @@
             <li class="devider">
             </li>
             <li>
-                <a class="login-btn" href="user/personal_center">
+                <a class="login-btn" href="/user/personal_center">
                     个人中心
                 </a>
             </li>
             <li class="devider">
             </li>
             <li>
-                <a class="login-btn" href="user/logout">
+                <a class="login-btn" href="/user/logout">
                     注销
                 </a>
             </li>
@@ -134,16 +133,7 @@
                         </li>
                         <li>
                             <a class="dropdown-toggle" data-toggle="dropdown" href="">
-                                榜单
-                                <b class="caret">
-                                </b>
-                            </a>
-                            <b class="caret-out">
-                            </b>
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                联系我们
+                                寻求帮助
                                 <b class="caret">
                                 </b>
                             </a>
@@ -175,59 +165,11 @@
 <div class="slider-inner">
     <div class="da-slider" id="da-slider">
         <div class="da-slide">
-            <h2>
-                <i>
-                    也一样
-                </i>
-                <br/>
-                <i>
-                    FULLY RESPONSIVE
-                </i>
-                <br/>
-                <i>
-                    DESIGN
-                </i>
-            </h2>
-            <p>
-                <i>
-                    Lorem ipsum dolor amet
-                </i>
-                <br/>
-                <i>
-                    tempor incididunt ut
-                </i>
-                <br/>
-                <i>
-                    veniam omnis
-                </i>
-            </p>
             <div class="da-img">
                 <img alt="" src="../statics/plugins/parallax-slider/img/1.png"/>
             </div>
         </div>
         <div class="da-slide">
-            <h2>
-                <i>
-                    RESPONSIVE VIDEO
-                </i>
-                <br/>
-                <i>
-                    SUPPORT AND
-                </i>
-                <br/>
-                <i>
-                    MANY MORE
-                </i>
-            </h2>
-            <p>
-                <i>
-                    Lorem ipsum dolor amet
-                </i>
-                <br/>
-                <i>
-                    tempor incididunt ut
-                </i>
-            </p>
             <div class="da-img span6">
                 <div class="span6">
                     <iframe allowfullscreen="" frameborder="0" height="320" mozallowfullscreen=""
@@ -237,44 +179,15 @@
             </div>
         </div>
         <div class="da-slide">
-            <h2>
-                <i>
-                    USING BEST WEB
-                </i>
-                <br/>
-                <i>
-                    SOLUTIONS WITH
-                </i>
-                <br/>
-                <i>
-                    HTML5/CSS3
-                </i>
-            </h2>
-            <p>
-                <i>
-                    Lorem ipsum dolor amet
-                </i>
-                <br/>
-                <i>
-                    tempor incididunt ut
-                </i>
-                <br/>
-                <i>
-                    veniam omnis
-                </i>
-            </p>
             <div class="da-img">
                 <img alt="image01" src="../statics/plugins/parallax-slider/img/html5andcss3.png"/>
             </div>
         </div>
         <nav class="da-arrows">
-                    <span class="da-arrows-prev">
-                    </span>
-            <span class="da-arrows-next">
-                    </span>
+            <span class="da-arrows-prev"></span>
+            <span class="da-arrows-next"></span>
         </nav>
     </div>
-    <!--/da-slider-->
 </div>
 
 <div class="row-fluid purchase margin-bottom-30">
@@ -286,7 +199,6 @@
             <p>
                 在这里，你可以探索你想探索的一切！
             </p>
-
         </div>
         <a class="btn-buy hover-effect" href="">
             详情
@@ -294,17 +206,143 @@
     </div>
 </div>
 
-<div class="container">
-    <!-- Service Blocks -->
 
+<div class="container">
 
     <div class="headline">
         <h3>
-            最新动态
+            兼职推荐
         </h3>
     </div>
-
+    <ul class="thumbnails">
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img alt="" src="../statics/img/carousel/3.jpg"/>
+                    </div>
+                    <a class="btn-more hover-effect" href="#">
+                        获取更多 +
+                    </a>
+                </div>
+                <h3>
+                    <a class="hover-effect" href="#">
+                        标题
+                    </a>
+                </h3>
+                <p>
+                    需要老师对英语语法有很深的了解，最好有一些应试技巧。
+                </p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img alt="" src="../statics/img/carousel/3.jpg"/>
+                    </div>
+                    <a class="btn-more hover-effect" href="#">
+                        获取更多 +
+                    </a>
+                </div>
+                <h3>
+                    <a class="hover-effect" href="#">
+                        标题
+                    </a>
+                </h3>
+                <p>
+                    需要老师对英语语法有很深的了解，最好有一些应试技巧。
+                </p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img alt="" src="../statics/img/carousel/3.jpg"/>
+                    </div>
+                    <a class="btn-more hover-effect" href="#">
+                        获取更多 +
+                    </a>
+                </div>
+                <h3>
+                    <a class="hover-effect" href="#">
+                        标题
+                    </a>
+                </h3>
+                <p>
+                    需要老师对英语语法有很深的了解，最好有一些应试技巧。
+                </p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail-style thumbnail-kenburn">
+                <div class="thumbnail-img">
+                    <div class="overflow-hidden">
+                        <img alt="" src="../statics/img/carousel/3.jpg"/>
+                    </div>
+                    <a class="btn-more hover-effect" href="#">
+                        获取更多 +
+                    </a>
+                </div>
+                <h3>
+                    <a class="hover-effect" href="#">
+                        标题
+                    </a>
+                </h3>
+                <p>
+                    需要老师对英语语法有很深的了解，最好有一些应试技巧。
+                </p>
+            </div>
+        </li>
+    </ul>
 </div>
+
+
+<!--这是页脚-->
+<div class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span4">
+                <div class="headline"><h3>关于我们</h3></div>
+                <p class="margin-bottom-25">本平台实现老师和学生在线教与学。</p>
+
+            </div>
+            <div class="span4">
+                <div class="headline"><h3>联系我们</h3></div>
+                <address>
+                    宝山区上大路99号 <br/>
+                    中国 上海<br/>
+                    联系方式: 18721808563 <br/>
+                    Email: <a href="mailto:1477765176@qq.com" class="">1477765176@qq.com</a>
+                </address>
+
+            </div>
+            <div class="span2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--这是版权区-->
+<div class="copyright">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span8">
+                <p>版权所有&copy; 上海大学。</p>
+            </div>
+            <div class="span4">
+                <a href="index.html">
+                    <img id="logo-footer" src="../statics/img/logo2-default.png"
+                         class="pull-right" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>

@@ -30,7 +30,7 @@ public class HunterInfo {
     }
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "username")
+    @JoinColumn(name = "username",referencedColumnName = "username")
     public User getAuthor() {
         return author;
     }

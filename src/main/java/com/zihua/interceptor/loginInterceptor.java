@@ -1,5 +1,8 @@
 package com.zihua.interceptor;
 
+import com.google.gson.ExclusionStrategy;
+import com.google.gson.FieldAttributes;
+import com.google.gson.GsonBuilder;
 import com.zihua.entity.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -18,14 +21,10 @@ public class loginInterceptor implements HandlerInterceptor {
         request.setCharacterEncoding("utf8");
         HttpSession session = request.getSession();
 
-
-        User a= (User) session.getAttribute("www.zihua.com");
         if (session.getAttribute("www.zihua.com") == null) {
             response.sendRedirect("login");
             return false;
         }
-        System.out.println(a);
-        System.out.println(session.getId());
         return true;
     }
 
