@@ -3,8 +3,9 @@ package com.zihua.controller;
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
 import com.google.gson.GsonBuilder;
-import com.sun.deploy.net.HttpResponse;
+import com.zihua.entity.HunterInfo;
 import com.zihua.entity.User;
+import com.zihua.service.HunterInfoService;
 import com.zihua.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,6 +29,8 @@ import javax.servlet.http.HttpSession;
 public class UserController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private HunterInfoService hunterInfoService;
 
     @RequestMapping(value = "/adduser", method = RequestMethod.POST)
     public String addUser(@Validated User user, Model model) {
@@ -66,7 +69,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/person_info",produces = "text/html;charset=UTF-8")
+    @RequestMapping(value = "/person_info", produces = "text/html;charset=UTF-8")
     @ResponseBody
     public String personInfo(HttpServletRequest request) {
 
@@ -91,5 +94,21 @@ public class UserController {
         return s;
 
     }
+
+    @RequestMapping(value = "/publish")
+    public String publish() {
+        return "publish";
+    }
+
+    @RequestMapping(value = "/do_publish", method = RequestMethod.POST)
+    public String doPublish(@Validated HunterInfo hunterInfo, HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        User a = (User) session.getAttribute("www.zihua.com");
+        hunterInfo.setAuthor(a);
+        hunterInfoService.addHunterInfo(hunterInfo);
+        return "redirect:/home";
+
+    }
+
 
 }

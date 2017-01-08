@@ -10,6 +10,9 @@ import java.util.List;
 
 /**
  * Created by zihua on 16-12-29.
+ * 用户dao 层
+ * userName,password 为必填字段
+ *
  */
 @Repository
 public class UserDao {

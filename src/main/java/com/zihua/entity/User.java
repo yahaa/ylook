@@ -11,6 +11,7 @@ import java.util.Set;
 
 /**
  * 用户类,主键是 userName
+ * userName,password 为必填字段
  */
 @Entity
 @Table(name = "user_table")

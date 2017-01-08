@@ -114,7 +114,7 @@
                     <ul class="nav top-2">
                         <li class="active"><a href="home">主页</a></li>
                         <li><a href="">动态</a></li>
-                        <li><a href="">寻求帮助</a></li>
+                        <li><a href="/user/publish">寻求帮助</a></li>
                         <li>
                             <a class="search">
                                 <i class="icon-search search-btn"></i>

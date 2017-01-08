@@ -5,6 +5,7 @@ import java.util.Date;
 
 /**
  * Created by zihua on 16-12-29.
+ * title,detail 为必填字段
  */
 @Entity
 @Table(name = "hunterinfo_table")
@@ -91,5 +92,17 @@ public class HunterInfo {
         this.published = published;
     }
 
-
+    @Override
+    public String toString() {
+        return "HunterInfo{" +
+                "deId=" + deId +
+                ", author=" + author +
+                ", title='" + title + '\'' +
+                ", tpye='" + tpye + '\'' +
+                ", visits=" + visits +
+                ", solve=" + solve +
+                ", details='" + details + '\'' +
+                ", published=" + published +
+                '}';
+    }
 }

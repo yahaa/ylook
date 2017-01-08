@@ -104,7 +104,7 @@
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="home.html">去帮助</a></li>
-                    <li><a href="post.html">求帮助</a></li>
+                    <li><a href="publish.jsp">求帮助</a></li>
                 </ul>
             </div>
             <div class="span9 bg-light">
