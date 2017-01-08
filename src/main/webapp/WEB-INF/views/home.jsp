@@ -90,6 +90,7 @@
     </div>
 </div>
 
+<!--头部-->
 <div class="header">
     <div class="container">
         <!-- Logo -->
@@ -105,45 +106,18 @@
                 <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
                             <span class="icon-bar">
                             </span>
-                    <span class="icon-bar">
-                            </span>
-                    <span class="icon-bar">
-                            </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </a>
-                <!-- /nav-collapse -->
+
                 <div class="nav-collapse collapse">
                     <ul class="nav top-2">
-                        <li class="active">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="home">
-                                主页
-                                <b class="caret">
-                                </b>
-                            </a>
-                            <b class="caret-out">
-                            </b>
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="">
-                                动态
-                                <b class="caret">
-                                </b>
-                            </a>
-                            <b class="caret-out">
-                            </b>
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="">
-                                寻求帮助
-                                <b class="caret">
-                                </b>
-                            </a>
-                            <b class="caret-out">
-                            </b>
-                        </li>
+                        <li class="active"><a href="home">主页</a></li>
+                        <li><a href="">动态</a></li>
+                        <li><a href="">寻求帮助</a></li>
                         <li>
                             <a class="search">
-                                <i class="icon-search search-btn">
-                                </i>
+                                <i class="icon-search search-btn"></i>
                             </a>
                         </li>
                     </ul>
@@ -162,6 +136,9 @@
         </div>
     </div>
 </div>
+
+
+<!--动态图区-->
 <div class="slider-inner">
     <div class="da-slider" id="da-slider">
         <div class="da-slide">
@@ -196,23 +173,17 @@
                     <span>
                         ylook,欢迎您的到来！
                     </span>
-            <p>
-                在这里，你可以探索你想探索的一切！
-            </p>
+            <p>在这里，你可以探索你想探索的一切！</p>
         </div>
-        <a class="btn-buy hover-effect" href="">
-            详情
-        </a>
+        <a class="btn-buy hover-effect" href="">详情</a>
     </div>
 </div>
 
 
+<!--展示区-->
 <div class="container">
-
     <div class="headline">
-        <h3>
-            兼职推荐
-        </h3>
+        <h3>最新动态</h3>
     </div>
     <ul class="thumbnails">
         <li class="span3">
@@ -266,9 +237,7 @@
                     </a>
                 </div>
                 <h3>
-                    <a class="hover-effect" href="#">
-                        标题
-                    </a>
+                    <a class="hover-effect" href="#">标题</a>
                 </h3>
                 <p>
                     需要老师对英语语法有很深的了解，最好有一些应试技巧。
