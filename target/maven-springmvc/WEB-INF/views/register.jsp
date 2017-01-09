@@ -81,7 +81,7 @@
 <!--填写表单部分-->
 <div class="container">
     <div class="row-fluid margin-bottom-10">
-        <form:form class="reg-page" action="user/adduser" modelAttribute="new_user">
+        <form:form class="reg-page" action="/adduser" modelAttribute="new_user">
             <h3>注册用户</h3>
             <div class="controls">
                 <label>用户名<span class="color-red">*</span></label>

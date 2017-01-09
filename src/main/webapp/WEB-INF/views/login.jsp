@@ -84,7 +84,7 @@
 <!--===登陆部分===-->
 <div class="container">
     <div class="row-fluid">
-        <form class="log-page" action="/user/check" method="post">
+        <form class="log-page" action="/check" method="post">
             <h3>登陆 ylook</h3>
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-user"></i></span>

@@ -46,6 +46,10 @@
             <mvc:mapping path="/home"/>
             <bean class="com.zihua.interceptor.loginInterceptor"/>
         </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <bean class="com.zihua.interceptor.UserInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 
 
