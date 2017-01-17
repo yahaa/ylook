@@ -1,0 +1,46 @@
+.search-input{
+	margin:10px;
+}
+
+.search-icon{
+	color: white;
+	text-align: right;
+	line-height: 50px;
+	margin-right: -20px;
+}
+.search-icon li a{
+	color: #fff;
+}
+
+.carousel-inner{
+	text-align: center;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	max-height: 400px;
+	margin:0 auto;
+}
+
+.threepage{
+	margin-top:10px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.logo{
+	margin:5px 10px;
+}
+.nav-center{
+	margin:0 100px;
+}
+
+.my-margin{
+	margin:10px 0;
+}
+
+.offset-senter{
+	text-align: center;
+}
+.color-red{
+	color: rgba(255, 22, 37, 0.96);
+}
