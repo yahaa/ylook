@@ -1,6 +1,7 @@
 <!--
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 -->
+<%--任务二 用bootstrap 来完成所有页面的布局这里我已经完成部分，还需完善和要美化--%>
 <jsp:include page="layout/nav4.jsp"/>
 <div class="row">
     <div class="col-md-6 col-md-offset-3 align_center" style="margin-top: 25px">

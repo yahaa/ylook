@@ -61,7 +61,7 @@
 
 
 <script>
-
+    <%--任务一 功能和welcome 页面的一样 把welcome页面改的同样改到这里即可--%>
     $(function () {
         $.ajax({
             url: '/more_info',

@@ -4,6 +4,7 @@
   Date: 17-1-13
   Time: 下午6:02
   To change this template use File | Settings | File Templates.
+   导航条部分每一个页面都用到所以我独立出来变成公用部分了
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>

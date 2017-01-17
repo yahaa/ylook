@@ -1,7 +1,7 @@
 <!--
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 -->
-<jsp:include page="layout/nav1.jsp"/>
+<jsp:include page="layout/nav1.jsp"/> <%--这里是用jsp 导入公共部分--%>
 <div class="row">
     <div class="col-md-6">
         <div class="threepage">
@@ -57,11 +57,13 @@
     <div id="tuijian"></div>
 </div>
 
-<jsp:include page="layout/foot.jsp"/>
+<jsp:include page="layout/foot.jsp"/> <%--这里是用jsp 导入公共部分--%>
 
 
 <script>
-
+    //任务一
+    //这里是用jquery来解析 /more_info 返回的json 数据
+    //我只是写了个样式，具体的细节还需要你们来完成
     $(function () {
         $.ajax({
             url: '/more_info',
