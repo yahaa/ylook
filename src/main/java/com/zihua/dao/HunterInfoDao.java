@@ -6,6 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by zihua on 17-1-8.
@@ -26,5 +27,9 @@ public class HunterInfoDao {
 
     public void addHunterInfo(HunterInfo hunterInfo){
         this.getSession().save(hunterInfo);
+    }
+
+    public List<HunterInfo> getInfos(){
+        return this.getSession().createQuery("from HunterInfo").list();
     }
 }
