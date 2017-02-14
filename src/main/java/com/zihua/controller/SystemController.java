@@ -55,19 +55,22 @@ public class SystemController {
         boolean ok = userService.checkLogin(username, password);
         System.out.println("jajaja");
         if (ok) {
-            systemService.getSession(request, username);
+            systemService.setSession(request, username);
             return "redirect:/home";
         } else {
             return "redirect:/login";
         }
-
     }
 
     @RequestMapping(value = "more_info",produces = "text/html;charset=UTF-8")
     @ResponseBody
-    public String getInfos(HttpServletRequest request){
-        String infos=systemService.getInfos(request);
+    public String getInfos(){
+        String infos=systemService.getInfos();
         return infos;
     }
+
+
+
+
 
 }

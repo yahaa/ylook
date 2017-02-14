@@ -1,19 +1,20 @@
 package com.zihua.service;
 
-import com.google.gson.ExclusionStrategy;
-import com.google.gson.FieldAttributes;
 import com.google.gson.GsonBuilder;
-import com.zihua.entity.HunterInfo;
+import com.zihua.dao.InfoDao;
+import com.zihua.dao.UserDao;
+import com.zihua.entity.Info;
 import com.zihua.entity.User;
-import com.zihua.gsonSkipCircleRelation.CircleAuthor;
-import com.zihua.gsonSkipCircleRelation.CircleInfos;
-import com.zihua.gsonSkipField.SkipUserPassword;
+import com.zihua.skip.Author;
+import com.zihua.skip.Password;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
+
+import static com.zihua.jsonTooks.JsonTooks.*;
 
 /**
  * Created by zihua on 17-1-9.
@@ -22,44 +23,45 @@ import java.util.List;
 public class SystemService {
 
     @Autowired
-    private UserService userService;
+    private UserDao userDao;
     @Autowired
-    private HunterInfoService hunterInfoService;
+    private InfoService infoService;
+    @Autowired
+    InfoDao infoDao;
 
     //服务器给用户注册 session
-    public void getSession(HttpServletRequest request, String userName) {
+    public void setSession(HttpServletRequest request, String userName) {
         HttpSession session = request.getSession(true);
         session.setAttribute("www.zihua.com", userName);
         session.setMaxInactiveInterval(300);
     }
 
     //服务器 获取个人信息 并返回json 格式数据
-    public String getPersonInfoJson(HttpServletRequest request) {
+    public String getUserInfo(HttpServletRequest request) {
         HttpSession session = request.getSession();
-
         String username = (String) session.getAttribute("www.zihua.com");
-        User a = userService.getUserByName(username);
-        GsonBuilder gsonBuilder = new GsonBuilder();
-        gsonBuilder.setExclusionStrategies(new CircleAuthor());
-        gsonBuilder.setExclusionStrategies(new SkipUserPassword());
-        return gsonBuilder.create().toJson(a);
+        User a = userDao.getUserByName(username);
+        return getUserInfoJson(a);
+
     }
 
-    public void doPublish(HunterInfo info, HttpServletRequest request) {
+    public void doPublish(Info info, HttpServletRequest request) {
         HttpSession session = request.getSession();
         String username = (String) session.getAttribute("www.zihua.com");
-        User a=userService.getUserByName(username);
+        User a = userDao.getUserByName(username);
         info.setAuthor(a);
-        hunterInfoService.addHunterInfo(info);
+        infoService.addHunterInfo(info);
     }
 
-    //返回用户发布的消息
-    public String getInfos(HttpServletRequest request){
-        List<HunterInfo> list=hunterInfoService.getInfos();
-        GsonBuilder gsonBuilder=new GsonBuilder();
-        gsonBuilder.setExclusionStrategies(new CircleInfos()); //跳出双向引用循环关系
-        gsonBuilder.setExclusionStrategies(new SkipUserPassword()); //忽略用户密码
-        return gsonBuilder.create().toJson(list);
-
+    //返回用户发布的所有消息
+    public String getInfos() {
+        List<Info> list = infoService.getInfos();
+        return getInfosJson(list);
     }
+
+    //通过 id 获取某条信详情
+    public String getInfoById(int id) {
+        return getInfoJson(infoDao.getInfoById(id));
+    }
+
 }

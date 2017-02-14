@@ -14,9 +14,8 @@ import java.util.Set;
  * userName,password 为必填字段
  */
 @Entity
-@Table(name = "user_table")
+@Table
 public class User {
-
     private String userName;
     private String password;
     private boolean isAdmin = false;
@@ -24,8 +23,7 @@ public class User {
     private String email;
     private String sex;
     private String phone;
-    private Set<HunterInfo> hunterInfos = new HashSet<HunterInfo>();
-
+    private Set<Info> infos = new HashSet<Info>();
 
     @Id
     @Column(name = "username", nullable = false, unique = true, length = 32)
@@ -108,11 +106,11 @@ public class User {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "username")
-    public Set<HunterInfo> getHunterInfos() {
-        return hunterInfos;
+    public Set<Info> getInfos() {
+        return infos;
     }
 
-    public void setHunterInfos(Set<HunterInfo> hunterInfos) {
-        this.hunterInfos = hunterInfos;
+    public void setInfos(Set<Info> infos) {
+        this.infos = infos;
     }
 }
